@@ -1,7 +1,8 @@
-import { products } from "../data/data.js";
 var card_main=document.getElementById("main_card");
+import { isReapet } from "../index.js";
 //card_container
-export var card=()=>{
+var cat=JSON.parse(localStorage.getItem("cad"))||[];
+export var card=(products,favirote_card)=>{
     for(let val of products){
         var card_container=document.createElement("div");
         card_container.classList.add("card");
@@ -35,8 +36,12 @@ export var card=()=>{
         st.innerHTML="&#9733";
         //button
         var button=document.createElement("button");
+        button.setAttribute("id",val._id);
         button.classList.add("button");
-        button.innerText="Add to cart";
+       var el=isReapet(cat,val._id);
+        button.innerText= favirote_card==="favirote_card"? "remove to cart":favirote_card==="main" &&
+        el ?"add to cart":"go to cart";
+        button.setAttribute("data-id",val._id);
         
         card_details_container.appendChild(name);
         card_details_container.appendChild(brand_name);
@@ -49,5 +54,7 @@ export var card=()=>{
         card_container.appendChild(card_details_container);
         //add to main card
         card_main.appendChild(card_container);
+         
         }
 }
+

@@ -4,12 +4,16 @@
     font-family: 'Times New Roman', Times, serif;
     background-color: rgba(255, 255, 255, 0.021);
 }
+
+/* cart */
 .card{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
 }
 .card_details{
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -17,14 +21,14 @@
 .button{
     background-color:rgba(240, 218, 218, 0.836);
     width: 200px;
-    height: 27px;   
+    height: 33px;   
     border-radius: 10px;
     cursor: pointer;
 }
 .fl{
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 img{
     width: 190px;
@@ -45,6 +49,8 @@ img{
   'GRAD' 0,
   'opsz' 48
 }
+
+/*  navbar */
 #nav{
     position: sticky;
     top: 0px;
