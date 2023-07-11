@@ -14,12 +14,12 @@ export const navbar=()=>{
     var search_button=document.createElement("span");
     search_button.classList.add("material-symbols-outlined");
     search_button.innerText="search";
-     
 
     var span=document.createElement("span");
     var search_input=document.createElement("input");
      search_input.classList.add("se");
      search_input.setAttribute("type","search");
+     search_input.setAttribute("id","search");
      search_input.setAttribute("placeholder","Search products");
     span.appendChild(search_input);
 
@@ -47,5 +47,4 @@ export const navbar=()=>{
 
     //adding to maIN NAV
     nav.appendChild(navibar_container);
-
 }
