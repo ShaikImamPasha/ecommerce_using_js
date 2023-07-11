@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 .card_details{
     
@@ -29,6 +29,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+    gap: 25px;
+    flex-wrap: wrap;
 }
 img{
     width: 190px;
@@ -68,10 +71,31 @@ img{
     width: 100px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .se{
   border-right: none;
   border-top: none;
   border-left: none; 
   background-color:  rgba(240, 218, 218, 0.336);
+}
+#hr_main_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    gap: 10px;
+}
+.img{
+    width: 120px;
+    height: 170px;
+}
+button{
+    background-color:rgba(240, 218, 218, 0.836);
+    width: 170px;
+    height: 30px;   
+    border-radius: 7px;
+    cursor: pointer;
 }
