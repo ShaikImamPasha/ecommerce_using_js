@@ -141,8 +141,8 @@ button:hover{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 img{
-    width: 290px;
-    height: 250px;
+    width: 340px;
+    height: 280px;
 }
 #filter_sybole{
     visibility: visible;
@@ -163,7 +163,7 @@ img{
     width: 400px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
-    height: 150px;
+
 }
 .navbar_right{
     width: 100px;
