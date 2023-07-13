@@ -5,6 +5,7 @@ export const filter=()=>{
     var rating_heading=document.createElement("p");
     rating_heading.innerText="Rating";
 
+
     var span_4=document.createElement("span");
     span_4.innerText="4 star & above";
     var span_4_span=document.createElement("span");
@@ -41,6 +42,7 @@ export const filter=()=>{
     input1.setAttribute("name","star");
     span_1_span.appendChild(input1);
     //adding to main
+
     filter_part.appendChild(filter_head);
     filter_part.appendChild(rating_heading);
     filter_part.appendChild(span_4);

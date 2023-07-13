@@ -71,7 +71,7 @@ img{
     height: 70px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
-    height: 95px;
+   
 }
 .navbar_right{
     width: 100px;
@@ -126,6 +126,9 @@ button:hover{
     flex-wrap: wrap;
 }
 
+#filter_sybole{
+    visibility: hidden;
+}
 /* for mobile desing */
 @media screen and (max-device-width: 640px) {
         .card{
@@ -137,15 +140,16 @@ button:hover{
     
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
+#filter_sybole{
+    visibility: visible;
+}
 .card_details{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-#filter_part{
-   
-}
+
 .navbar_main{
     background-color:  rgb(246 238 238);
     display: flex;
@@ -155,6 +159,39 @@ button:hover{
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
     height: 95px;
+}
+.navbar_right{
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#filter_part{
+    background-color:  rgb(246 238 238);
+    width: 250px;
+    height: 550px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top:72px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+.filter_part_d{
+    background-color:  rgb(246 238 238);
+    width: 250px;
+    height: 550px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top:72px;
+    flex-wrap: wrap;
 }
 }
  

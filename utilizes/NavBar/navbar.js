@@ -3,10 +3,15 @@ export const navbar=(card)=>{
     var navibar_container=document.createElement("div");
     navibar_container.classList.add("navbar_main");
     //navleft
+    var filter_symobol=document.createElement("span");
+    filter_symobol.classList.add("material-symbols-outlined");
+     filter_symobol.setAttribute("id","filter_sybole");
+    filter_symobol.innerText=" filter_list";
     var navleft=document.createElement("div");
     var navleft_containt=document.createElement("h1");
     navleft_containt.innerText= card==="shoping_card"?"Items store":card==="favorite"?"favorite":"Flash Shop";
     navleft.appendChild(navleft_containt);
+    navleft.appendChild(filter_symobol);
     //navmiddle
     var navMiddleContainer=document.createElement("div");
     navMiddleContainer.classList.add("fl");
@@ -51,3 +56,4 @@ export const navbar=(card)=>{
     //adding to maIN NAV
     nav.appendChild(navibar_container);
 }
+

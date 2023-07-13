@@ -3,7 +3,7 @@ import {products} from "./data/data.js";
 var nav_id=document.getElementById("nav");
 var cat=JSON.parse(localStorage.getItem("cad"))||[];
 navbar("main");
-//filter();
+filter();
 card(products,"main");
 var button=document.getElementById("main_card");
 button.addEventListener("click",(event)=>{
@@ -64,4 +64,16 @@ input.addEventListener("keyup",(e)=>{
 var shoping_card=document.getElementById("shoping_card");
 shoping_card.addEventListener("click",(event)=>{
     location.href="./pages/singlecard.html";
+})
+var filter_sybole=document.getElementById("filter_sybole");
+filter_sybole.addEventListener("click",(event)=>{
+    console.log(document.getElementsByClassName("a")[0]);
+    var filter_part=document.getElementsByClassName("a")[0];
+    filter_part.classList.toggle("filter_part_d");
+    if(document.getElementById("filter_part")){
+        filter_part.setAttribute("id"," ");
+    }
+    else{
+        filter_part.setAttribute("id","filter_part");
+    }
 })
