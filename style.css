@@ -129,6 +129,7 @@ button:hover{
 @media screen and (max-device-width: 640px) {
      #filter_part{
         background-color: red;
+        
      }
 }
  
