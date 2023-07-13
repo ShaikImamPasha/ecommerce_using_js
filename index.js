@@ -67,7 +67,6 @@ shoping_card.addEventListener("click",(event)=>{
 })
 var filter_sybole=document.getElementById("filter_sybole");
 filter_sybole.addEventListener("click",(event)=>{
-    console.log(document.getElementsByClassName("a")[0]);
     var filter_part=document.getElementsByClassName("a")[0];
     filter_part.classList.toggle("filter_part_d");
     if(document.getElementById("filter_part")){
