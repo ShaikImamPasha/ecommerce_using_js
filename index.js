@@ -3,7 +3,7 @@ import {products} from "./data/data.js";
 var nav_id=document.getElementById("nav");
 var cat=JSON.parse(localStorage.getItem("cad"))||[];
 navbar("main");
-filter();
+//filter();
 card(products,"main");
 var button=document.getElementById("main_card");
 button.addEventListener("click",(event)=>{

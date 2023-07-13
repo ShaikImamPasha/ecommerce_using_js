@@ -7,13 +7,13 @@
 
 /* cart */
 .card{
+  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 .card_details{
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -71,6 +71,7 @@ img{
     height: 70px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
+    height: 95px;
 }
 .navbar_right{
     width: 100px;
@@ -127,9 +128,33 @@ button:hover{
 
 /* for mobile desing */
 @media screen and (max-device-width: 640px) {
-     #filter_part{
-        background-color: red;
-        
-     }
+        .card{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+}
+.card_details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#filter_part{
+   
+}
+.navbar_main{
+    background-color:  rgb(246 238 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
+    flex-wrap: wrap;
+    height: 95px;
+}
 }
  
