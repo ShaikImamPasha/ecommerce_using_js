@@ -141,7 +141,7 @@ button:hover{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 img{
-    width: 250px;
+    width: 290px;
     height: 250px;
 }
 #filter_sybole{
@@ -159,7 +159,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    height: 900px;
+    width: 400px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
     height: 150px;
