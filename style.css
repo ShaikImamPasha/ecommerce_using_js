@@ -132,8 +132,8 @@ button:hover{
 /* for mobile desing */
 @media screen and (max-device-width: 1000px) {
         .card{
-    width: 700px;
-    height: 400px;
+    width: 1300px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
