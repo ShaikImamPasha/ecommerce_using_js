@@ -19,11 +19,15 @@
     flex-wrap: wrap;
 }
 .button{
-    background-color:rgba(240, 218, 218, 0.836);
+    background-color:  rgb(246 238 238);
     width: 200px;
     height: 33px;   
     border-radius: 10px;
     cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
 }
 .fl{
     display: flex;
@@ -60,7 +64,7 @@ img{
     top: 0px;
 }
 .navbar_main{
-    background-color: rgb(240, 218, 218);
+    background-color:  rgb(246 238 238);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,17 +98,21 @@ img{
     height: 170px;
 }
 button{
-    background-color:rgba(240, 218, 218, 0.836);
+    background-color:  rgb(246 238 238);
     width: 170px;
     height: 30px;   
     border-radius: 7px;
     cursor: pointer;
 }
+button:hover{
+    background-color: rgba(190, 18, 18, 0.842);
+    color: rgb(233, 230, 230);
+}
 .filter{
     display: flex;
 }
 #filter_part{
-    background-color: rgb(240, 218, 218);
+    background-color:  rgb(246 238 238);
     width: 250px;
     height: 550px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
@@ -115,4 +123,12 @@ button{
     left: 0px;
     top:72px;
     flex-wrap: wrap;
+}
+
+/* for mobile desing */
+@media (max-width: 500px) {
+    .button{
+        color: red;
+        background-color: red;
+    }
 }

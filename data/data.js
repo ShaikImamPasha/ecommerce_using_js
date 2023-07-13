@@ -1,4 +1,4 @@
-export const products = [
+export var products = [
     {
       _id: "001",
       name: "Men Checked Shirt",

@@ -1,11 +1,11 @@
 var nav=document.getElementById("nav"); 
-export const navbar=()=>{
+export const navbar=(card)=>{
     var navibar_container=document.createElement("div");
     navibar_container.classList.add("navbar_main");
     //navleft
     var navleft=document.createElement("div");
     var navleft_containt=document.createElement("h1");
-    navleft_containt.innerText="Flash Shop";
+    navleft_containt.innerText= card==="shoping_card"?"Items store":card==="favorite"?"favorite":"Flash Shop";
     navleft.appendChild(navleft_containt);
     //navmiddle
     var navMiddleContainer=document.createElement("div");
@@ -32,17 +32,20 @@ export const navbar=()=>{
     var faviorate=document.createElement("span");
     faviorate.classList.add("material-symbols-outlined");
     faviorate.innerText="favorite";
+    faviorate.setAttribute("id","favorite");
     
     var shoping_cart=document.createElement("span");
     shoping_cart.classList.add("material-symbols-outlined");
-    shoping_cart.innerText="shopping_cart";
-
-    navRightContainer.appendChild(faviorate);
-    navRightContainer.appendChild(shoping_cart);
+    shoping_cart.setAttribute("id","shoping_card");
+    shoping_cart.innerHTML=`shopping_cart<span> <small style='color:red'>
+    ${JSON.parse(localStorage.getItem("no_itemes")) || 0}</small></span>`;
+    
+    card==="shoping_card"?navRightContainer.appendChild(shoping_cart):card==="favorite"?
+    navRightContainer.appendChild(faviorate):navRightContainer.appendChild(shoping_cart);
     
     //adding to navcontainer
     navibar_container.appendChild(navleft);
-    navibar_container.appendChild(navMiddleContainer);
+    card==="shoping_card"?null:card==="favorite"?null:navibar_container.appendChild(navMiddleContainer);
     navibar_container.appendChild(navRightContainer);
 
     //adding to maIN NAV
