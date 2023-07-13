@@ -126,9 +126,9 @@ button:hover{
 }
 
 /* for mobile desing */
-@media (max-width: 500px) {
-    .button{
-        color: red;
+@media screen and (max-device-width: 640px) {
+     #filter_part{
         background-color: red;
-    }
+     }
 }
+ 
