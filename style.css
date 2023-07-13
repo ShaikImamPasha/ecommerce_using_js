@@ -132,13 +132,17 @@ button:hover{
 /* for mobile desing */
 @media screen and (max-device-width: 1000px) {
         .card{
-    width: 1300px;
-    height: 700px;
+    width: 700px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+}
+img{
+    width: 450px;
+    height: 300px;
 }
 #filter_sybole{
     visibility: visible;
@@ -158,7 +162,7 @@ button:hover{
     height: 70px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
-    height: 120px;
+    height: 150px;
 }
 .navbar_right{
     width: 100px;
