@@ -18,7 +18,7 @@ export const navbar=(card,pagetype)=>{
     pagetype==="shoping_card"?null:navleft.appendChild(homepage);
     navleft.appendChild(navleft_containt);
    pagetype==="shop_store"?null:navleft.appendChild(filter_symobol);
-    //navmiddle
+    //navmiddle bar
     var navMiddleContainer=document.createElement("div");
     navMiddleContainer.classList.add("fl");
     
