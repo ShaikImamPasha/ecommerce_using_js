@@ -126,7 +126,7 @@ button:hover{
 /* for mobile desing */
 @media screen and (max-device-width: 500px) {
         .card{
-    width: 200px;
+    width: 190px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ button:hover{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 img{
-    width: 160px;
+    width: 150px;
     height: 170px;
 }
 #filter_sybole{
