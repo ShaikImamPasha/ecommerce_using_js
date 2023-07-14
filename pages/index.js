@@ -1,7 +1,7 @@
 import { horizantelcard,navbar,isReapet} from "../utilizes/index.js";
 import { products } from "../data/data.js";
 var cat=JSON.parse(localStorage.getItem("cad"));
-var nav_id=document.getElementById("nav");
+var nav_id=document.getElementById("nav","shop_store");
 horizantelcard(cat);
 navbar("shoping_card");
 var hr_main_card=document.getElementById("hr_main_card");

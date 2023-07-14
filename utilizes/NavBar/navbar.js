@@ -1,5 +1,5 @@
 var nav=document.getElementById("nav"); 
-export const navbar=(card)=>{
+export const navbar=(card,pagetype)=>{
     var navibar_container=document.createElement("div");
     navibar_container.classList.add("navbar_main");
     //navleft
@@ -10,8 +10,14 @@ export const navbar=(card)=>{
     var navleft=document.createElement("div");
     var navleft_containt=document.createElement("h1");
     navleft_containt.innerText= card==="shoping_card"?"Items store":card==="favorite"?"favorite":"Flash Shop";
+    var homepage=document.createElement("span");
+    var a=document.createElement("a");
+    a.setAttribute("href","../index.html");
+    a.innerHTML="<p>Home</p>";
+    homepage.appendChild(a);
+    pagetype==="shoping_card"?null:navleft.appendChild(homepage);
     navleft.appendChild(navleft_containt);
-    navleft.appendChild(filter_symobol);
+   pagetype==="shop_store"?null:navleft.appendChild(filter_symobol);
     //navmiddle
     var navMiddleContainer=document.createElement("div");
     navMiddleContainer.classList.add("fl");

@@ -2,7 +2,7 @@ import { navbar,card,isReapet,filter } from "./utilizes/index.js";
 import {products} from "./data/data.js";
 var nav_id=document.getElementById("nav");
 var cat=JSON.parse(localStorage.getItem("cad"))||[];
-navbar("main");
+navbar("main","shoping_card");
 filter();
 card(products,"main");
 var button=document.getElementById("main_card");
@@ -16,7 +16,7 @@ button.addEventListener("click",(event)=>{
         no_itemes=no_itemes+1;
         localStorage.setItem("no_itemes",JSON.stringify(no_itemes));
         nav_id.innerHTML="";
-        navbar("main");
+        navbar("main","shoping_card");
         localStorage.setItem("cad",JSON.stringify(cat));
     var newButton=document.getElementById(cartdata[0]._id);
         newButton.innerText="Go to cart";
