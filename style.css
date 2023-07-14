@@ -130,10 +130,10 @@ button:hover{
     visibility: hidden;
 }
 /* for mobile desing */
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-device-width: 600px) {
         .card{
-    width: 450px;
-    height: 400px;
+    width: 260px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -141,8 +141,8 @@ button:hover{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
 }
 img{
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }
 #filter_sybole{
     visibility: visible;
@@ -162,7 +162,8 @@ img{
     height: 70px;
     border-bottom: 2px rgba(0, 0, 0, 0.226) solid;
     flex-wrap: wrap;
-    height: 150px;
+    height: 105px;
+    
 }
 .navbar_right{
     width: 100px;
@@ -186,7 +187,7 @@ img{
 }
 .filter_part_d{
     background-color:  rgb(246 238 238);
-    width: 350px;
+    width: 500px;
     height: 1050px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.178);
     display: flex;
@@ -194,7 +195,7 @@ img{
     align-items: center;
     position: sticky;
     left: 0px;
-    top:150px;
+    top:108px;
     flex-wrap: wrap;
 }
 }
